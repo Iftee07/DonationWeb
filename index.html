@@ -25,7 +25,7 @@
         </section>
         <section class="flex align-middle space-x-4">
           <img src="/assets/coin.png" alt="" />
-          <p class="text-black text-lg"><span>5500</span>BDT</p>
+          <p class="text-black text-lg"><span id="balance">5500</span>BDT</p>
         </section>
       </section>
       <section class="flex place-content-center space-x-10">
@@ -47,7 +47,7 @@
         <div class="hero-content flex-col lg:flex-row-reverse">
           <div class="text-center lg:text-left">
             <button class="flex space-x-3 text-lg font-bold">
-              <img src="/assets/coin.png" alt="" /><span>0</span> BDT
+              <img src="/assets/coin.png" alt="" /><span id="donated">0</span> BDT
             </button>
             <h1 class="text-xl font-bold">
               Donate for Flood at Noakhali, Bangladesh
@@ -61,11 +61,13 @@
               lives of those in need.
             </p>
             <input
+              id="amount"
               type="text"
               placeholder="Type here"
               class="input input-bordered w-11/12"
             />
             <button
+              id="add-money"
               class="btn bg-lime-400 text-black border-none font-bold text-lg w-11/12 my-5"
             >
               Blog
@@ -76,102 +78,9 @@
           </div>
         </div>
       </div>
-      <div></div>
-      <div>
-        <div class="hero-content flex-col lg:flex-row-reverse">
-          <div class="text-center lg:text-left">
-            <button class="flex space-x-3 text-lg font-bold">
-              <img src="/assets/coin.png" alt="" /><span>0</span> BDT
-            </button>
-            <h1 class="text-xl font-bold">
-              Donate for Flood at Noakhali, Bangladesh
-            </h1>
-            <p class="py-6">
-              The recent floods in Noakhali have caused significant damage to
-              homes infrastructure. Your donation will help provide essential
-              supplies and to those affected by this disaster. Every
-              contribution, big or small, makes difference. Please join us in
-              supporting the relief efforts and making a positive impact on the
-              lives of those in need.
-            </p>
-            <input
-              type="text"
-              placeholder="Type here"
-              class="input input-bordered w-11/12"
-            />
-            <br />
-            <button
-              class="btn bg-lime-400 text-black border-none font-bold text-lg w-11/12 my-5"
-            >
-              Blog
-            </button>
-          </div>
-          <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-            <img src="/assets/feni.png" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="hero-content flex-col lg:flex-row-reverse">
-        <div class="text-center lg:text-left">
-          <button class="flex space-x-3 text-lg font-bold">
-            <img src="/assets/coin.png" alt="" /><span>0</span> BDT
-          </button>
-          <h1 class="text-xl font-bold">
-            Donate for Flood at Noakhali, Bangladesh
-          </h1>
-          <p class="py-6">
-            The recent floods in Noakhali have caused significant damage to
-            homes infrastructure. Your donation will help provide essential
-            supplies and to those affected by this disaster. Every contribution,
-            big or small, makes difference. Please join us in supporting the
-            relief efforts and making a positive impact on the lives of those in
-            need.
-          </p>
-          <input
-            type="text"
-            placeholder="Type here"
-            class="input input-bordered w-11/12"
-          />
-          <br />
-          <button
-            class="btn bg-lime-400 text-black border-none font-bold text-lg w-11/12 my-5"
-          >
-            Blog
-          </button>
-        </div>
-        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-          <img src="/assets/feni.png" alt="" />
-        </div>
-      </div>
     </section>
-    <section>
-      <div class="collapse bg-base-200">
-        <input type="radio" name="my-accordion-1" checked="checked" />
-        <div class="collapse-title text-xl font-medium">
-          Click to open this one and close others
-        </div>
-        <div class="collapse-content">
-          <p>hello</p>
-        </div>
-      </div>
-      <div class="collapse bg-base-200">
-        <input type="radio" name="my-accordion-1" checked="checked" />
-        <div class="collapse-title text-xl font-medium">
-          Click to open this one and close others
-        </div>
-        <div class="collapse-content">
-          <p>hello</p>
-        </div>
-      </div>
-      <div class="collapse bg-base-200">
-        <input type="radio" name="my-accordion-1" checked="checked" />
-        <div class="collapse-title text-xl font-medium">
-          Click to open this one and close others
-        </div>
-        <div class="collapse-content">
-          <p>hello</p>
-        </div>
-      </div>
-    </section>
+    <section id="history"></section>
   </body>
+  <script src="/fucntions.js"></script>
+  <script src="/sharedFunction.js"></script>
 </html>
