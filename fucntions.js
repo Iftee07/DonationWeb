@@ -26,6 +26,17 @@ document
     //removes money from balance
     const rem_balance = balance - addMoney;
     document.getElementById("balance").innerText = rem_balance;
+
+    //transaction history
+    let date = new Date();
+    let section = document.createElement("section");
+    section.innerHTML = `
+    <p>${addMoney} taka donated for Noakhali Flood </p>
+    <p>${date}</p>
+    `;
+
+    document.getElementById("history").appendChild(section);
+    alert(addMoney + " Taka donated successfully");
   });
 
 document
@@ -56,8 +67,18 @@ document
     //removes money from balance
     const rem_balance = balance - addMoney;
     document.getElementById("balance").innerText = rem_balance;
-  });
 
+    //transaction history
+    let date = new Date();
+    let section = document.createElement("section");
+    section.innerHTML = `
+    <p>${addMoney} taka donated for Feni Flood </p>
+    <p>${date}</p>
+    `;
+
+    document.getElementById("history").appendChild(section);
+    alert(addMoney + " Taka donated successfully");
+  });
 document
   .getElementById("add_money2")
   .addEventListener("click", function (event) {
@@ -86,12 +107,27 @@ document
     //removes money from balance
     const rem_balance = balance - addMoney;
     document.getElementById("balance").innerText = rem_balance;
+
+    //transaction history
+    let date = new Date();
+    let section = document.createElement("section");
+    section.innerHTML = `
+    <p>${addMoney} taka donated for Quota Protest movement </p>
+    <p>${date}</p>
+    `;
+
+    document.getElementById("history").appendChild(section);
+    alert(addMoney + " Taka donated successfully");
   });
 document
   .getElementById("donate_button")
   .addEventListener("click", function (event) {
     document.getElementById("history").classList.add("hidden");
     document.getElementById("donation_section").classList.remove("hidden");
+    document.getElementById("history_button").classList.remove("bg-lime-400");
+    document.getElementById("history_button").classList.add("bg-gray-400");
+    document.getElementById("donate_button").classList.remove("bg-gray-400");
+    document.getElementById("donate_button").classList.add("bg-lime-400");
   });
 
 document
@@ -99,4 +135,8 @@ document
   .addEventListener("click", function (event) {
     document.getElementById("donation_section").classList.add("hidden");
     document.getElementById("history").classList.remove("hidden");
+    document.getElementById("history_button").classList.add("bg-lime-400");
+    document.getElementById("history_button").classList.remove("bg-gray-400");
+    document.getElementById("donate_button").classList.remove("bg-lime-400");
+    document.getElementById("donate_button").classList.add("bg-gray-400");
   });

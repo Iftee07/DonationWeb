@@ -1,37 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Blog</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <section>
-      <div class="collapse bg-base-200">
-        <input type="radio" name="my-accordion-1" checked="checked" />
+    <nav class="space-y-10 sticky top-0 z-50 backdrop-blur-xl pb-5"">
+      <section
+        class="flex space-y-5 lg:space-y-0 flex-col lg:flex-row place-content-between bg-[#F9F7F3] lg: px-[10%] py-5"
+      >
+        <a href="/blog.html"
+          ><button
+            class="btn bg-lime-400 text-black border-none font-bold text-lg"
+          >
+            Blog
+          </button></a
+        >
+
+        <section class="flex space-x-4 align-middle">
+          <img src="/assets/logo.png" alt="" />
+          <p class="text-black font-bold text-2xl">Donate Bangladesh</p>
+        </section>
+        <section class="flex align-middle space-x-4">
+          <img src="/assets/coin.png" alt="" />
+          <p class="text-black text-lg"><span id="balance">5500</span>BDT</p>
+        </section>
+      </section>
+    </nav>
+    <section class="mx-auto lg:w-2/3 pt-10">
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" checked="checked" />
         <div class="collapse-title text-xl font-medium">
-          Click to open this one and close others
+          What is JavaScript?
         </div>
         <div class="collapse-content">
-          <p>hello</p>
+          <p>
+            JavaScript is a high-level, interpreted programming language that
+            enables the creation of interactive web pages and dynamic web
+            applications. It is widely used for both front-end and back-end
+            development.
+          </p>
         </div>
       </div>
-      <div class="collapse bg-base-200">
-        <input type="radio" name="my-accordion-1" checked="checked" />
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
         <div class="collapse-title text-xl font-medium">
-          Click to open this one and close others
+          What are the different data types in JavaScript?
         </div>
         <div class="collapse-content">
-          <p>hello</p>
+          <p>
+            JavaScript has six primitive data types: Number, String, Boolean,
+            Null, Undefined, and Symbol. It also has two compound data types:
+            Object and Array.
+          </p>
         </div>
       </div>
-      <div class="collapse bg-base-200">
-        <input type="radio" name="my-accordion-1" checked="checked" />
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
         <div class="collapse-title text-xl font-medium">
-          Click to open this one and close others
+          What is hoisting in JavaScript?
         </div>
         <div class="collapse-content">
-          <p>hello</p>
+          <p>
+            Hoisting is a JavaScript mechanism where variables and function
+            declarations are moved to the top of their containing scope during
+            the compile phase. This means you can use functions and variables
+            before they are declared in the code.
+          </p>
         </div>
       </div>
     </section>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,16 +9,22 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Donation Page</title>
   </head>
   <body>
-    <nav class="space-y-10">
-      <section class="flex place-content-between bg-gray-300 lg: px-[10%] py-5">
-        <button
-          class="btn bg-lime-400 text-black border-none font-bold text-lg"
+    <nav class="space-y-10 sticky z-50 top-0 backdrop-blur-xl pb-5">
+      <section
+        class="flex space-y-5 lg:space-y-0 flex-col lg:flex-row place-content-between bg-[#F9F7F3] lg: px-[10%] py-5"
+      >
+        <a href="/blog.html"
+          ><button
+            class="btn bg-lime-400 text-black border-none font-bold text-lg"
+          >
+            Blog
+          </button></a
         >
-          Blog
-        </button>
+
         <section class="flex space-x-4 align-middle">
           <img src="/assets/logo.png" alt="" />
           <p class="text-black font-bold text-2xl">Donate Bangladesh</p>
@@ -44,7 +50,7 @@
         </button>
       </section>
     </nav>
-    <section id="donation_section" class="mx-auto w-8/12 space-y-5">
+    <section id="donation_section" class="mx-auto lg:w-8/12 space-y-5">
       <div>
         <div class="hero-content flex-col lg:flex-row-reverse">
           <div class="text-center lg:text-left">
@@ -73,7 +79,7 @@
               id="add_money"
               class="btn bg-lime-400 text-black border-none font-bold text-lg w-11/12 my-5"
             >
-              Blog
+              Donate
             </button>
           </div>
           <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
@@ -111,7 +117,7 @@
               id="add_money1"
               class="btn bg-lime-400 text-black border-none font-bold text-lg w-11/12 my-5"
             >
-              Blog
+              Donate
             </button>
           </div>
           <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
@@ -150,7 +156,7 @@
               id="add_money2"
               class="btn bg-lime-400 text-black border-none font-bold text-lg w-11/12 my-5"
             >
-              Blog
+              Donate
             </button>
           </div>
           <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
@@ -159,8 +165,8 @@
         </div>
       </div>
     </section>
-    <section id="history" class="hidden">
-      <h1>Transaction History</h1>
+    <section id="history" class="hidden mx-auto lg:w-8/12 space-y-5 text-2xl">
+      <p class="text-4xl text-center pt-5">Transaction History</p>
     </section>
   </body>
   <script src="/fucntions.js"></script>
