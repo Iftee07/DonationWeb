@@ -7,3 +7,7 @@ function getText(id) {
   const value = document.getElementById(id).innerText;
   return value;
 }
+
+function redirect() {
+  window.location = "./blog.html";
+}
